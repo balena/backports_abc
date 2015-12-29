@@ -1,0 +1,22 @@
+Source: python-backports-abc
+Section: python
+Priority: optional
+Maintainer: G. B. Versiani <guibv@yahoo.com>
+Build-Depends: python-all (>= 2.6.6-3), debhelper (>= 7)
+Standards-Version: 3.9.5
+Homepage: http://github.com/cython/python-backports-abc
+Vcs-Git: http://github.com/cython/python-backports-abc.git
+X-Python-Version: >= 2.6
+
+Package: python-backports-abc
+Architecture: any
+Depends: ${misc:Depends}, ${python:Depends}
+Description: Provides collections.abc backports to Python 2.x and 3.2
+ Provides the following functions to Python 2.x and 3.2:
+   * collections.abc.Generator
+   * collections.abc.Awaitable
+   * collections.abc.Coroutine
+   * inspect.isawaitable(obj)
+ .
+ All of them are also available directly from the backports_abc module
+ namespace.
